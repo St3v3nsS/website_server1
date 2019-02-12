@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UEFA Champions League - UEFA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Morosan Ionut-Mihai">
+        <meta name="description" content="This is a tiny project for Univeristy purposes. This is a site about UCL with a little game inside.">
+        <link rel="icon" href="ucl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+              <a class="logo-link" href="./index.html">
+                <img src="./logo.png" alt="UEFA Champions League" title="UEFA Champions League">
+              </a>
+             
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <div class="dropdown">
+                    <a href="./index.html">HOME</a>
+                    <div class="dropdown-content">
+                        <a href="./index.html#NEWS">NEWS</a>
+                        <a href="./index.html#Articles">BLOG</a>
+                    </div>
+                </div>
+                <a href="./articles.html" >ARTICLES</a>
+                <a href="./clubs.html">CLUBS</a>
+                <a href="#" class="active">STANDINGS</a>
+                <a href="./uefaGame.html"  id="newWindow">UEFA GAME</a>
+                <a href="./contact.html">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" id="hamburgerMenu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <div class="snowFlakes"></div>
+
+        <section class="groups">
+            <h3 class="group_name">GROUP A</h3>
+            <table class="group">
+                <tr>
+                    <th>Club Name</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/borussia.png">
+                            <figcaption>Borussia Dortmund</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/atletico.png">
+                            <figcaption>Club Atletico de Madrid</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/monaco.png">
+                            <figcaption>AS Monaco FC</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/brugge.png">
+                            <figcaption>Club Brugge</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <h3 class="group_name">GROUP B</h3>
+            <table class="group">
+                <tr>
+                    <th>Club Name</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/barcelona.png">
+                            <figcaption>FC Barcelona</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/inter.png">
+                            <figcaption>FC Internazionale Milano</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/psv.png">
+                            <figcaption>PSV Eindhoven</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                   <td>
+                        <figure>
+                            <img src="./clubs/icons/tottenham.png">
+                            <figcaption>Tottehnam Hotspur FC</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <h3 class="group_name">GROUP C</h3>
+            <table class="group">
+                <tr>
+                    <th>Club Name</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/liverpool.png">
+                            <figcaption>Liverpool FC</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/napoli.png">
+                            <figcaption>SSC Napoli</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                   <td>
+                        <figure>
+                            <img src="./clubs/icons/psg.png">
+                            <figcaption>Paris Saint-Germain</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/zvezda.png">
+                            <figcaption>FK Crvena Zvezda</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <h3 class="group_name">GROUP D</h3>
+            <table class="group">
+                <tr>
+                    <th>Club Name</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/porto.png">
+                            <figcaption>FC Porto</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                   <td>
+                        <figure>
+                            <img src="./clubs/icons/schalke.png">
+                            <figcaption>FC Schalke 04</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/galata.png">
+                            <figcaption>Galatasaray AS</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                   <td>
+                        <figure>
+                            <img src="./clubs/icons/lokomotiv.png">
+                            <figcaption>FC Lokomotiv Moskva</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            <h3 class="group_name">GROUP E</h3>
+            <table class="group">
+                <tr>
+                    <th>Club Name</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                   <td>
+                        <figure>
+                            <img src="./clubs/icons/ajax.png">
+                            <figcaption>AFC Ajax</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/bayern.png">
+                            <figcaption>FC Bayern Munchen</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/benfica.png">
+                            <figcaption>SL Benfica</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/aek.png">
+                            <figcaption>AEK Athens FC</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            <h3 class="group_name">GROUP F</h3>
+            <table class="group">
+                <tr>
+                    <th>Club Name</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/city.png">
+                            <figcaption>Manchester City FC</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/lyon.png">
+                            <figcaption>Olympique Lyonnais</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/shakthar.png">
+                            <figcaption>FC Shakhtar Donetsk</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/hoffenheim.png">
+                            <figcaption>TSG 1899 Hoffenheim</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <h3 class="group_name">GROUP G</h3>
+            <table class="group">
+                <tr>
+                    <th>Club Name</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/roma.png">
+                            <figcaption>AS Roma</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/real.png">
+                            <figcaption>Real Madrid CF</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/cska.png">
+                            <figcaption>PFC CSKA Moskva</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/plzen.png">
+                            <figcaption>FC Viktoria Plzen</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <h3 class="group_name">GROUP H</h3>
+            <table class="group">
+                <tr>
+                    <th>Club Name</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/juve.png">
+                            <figcaption>Juventus</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/united.png">
+                            <figcaption>Manchester United</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                   <td>
+                        <figure>
+                            <img src="./clubs/icons/valencia.png">
+                            <figcaption>Valencia CF</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="./clubs/icons/youngboys.png">
+                            <figcaption>BSC Young Boys</figcaption>
+                        </figure>
+                    </td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+        </section>
+        <button id="ScrollToTop" title="Go to Top">Top</button>
+    </body>
+    <footer>
+        Copyright Morosan Ionut-Mihai
+    </footer>
+</html>

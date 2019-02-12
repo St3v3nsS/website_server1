@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UEFA Champions League - UEFA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Morosan Ionut-Mihai">
+        <meta name="keywords" content="UCL,Uefa">
+        <meta name="description" content="This is a tiny project for Univeristy purposes. This is a site about UCL with a little game inside.">
+        <base href="./index.html" target="_blank">
+        <link rel="icon" href="ucl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="noStand">
+        <button id="LogIn" title="Log In">LOG IN</button>
+        <button id="SignIn" title="Sign In">SIGN UP</button>
+
+        <div class="Logmodal" id="Logwrapper">
+            <form class="modal-content animate" method="post" action="/login">
+    
+                <div class="imgcontainer">
+                    <img src="./avatar.jpg" alt="Avatar" class="avatar">
+                    <h1 style="text-align:center">Login Form</h1>
+                    <span class="close" title="Close PopUp">&times;</span>
+
+                </div>
+            
+                <div class="container">
+                    <input type="text" placeholder="Enter Username" name="uname">
+                    <input type="password" placeholder="Enter Password" name="psw">        
+                    <button type="submit" id='logBtn'>Login</button>
+                    <input type="checkbox" style="margin:26px 30px;" name="chkbox"> Remember me      
+                    <a href="#" style="text-decoration:none; float:right; margin-right:15%;">Forgot Password ?</a>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="Signmodal" id="Signwrapper">
+            <form class="modal-content animate" method="post" action="/signup">
+    
+                <div class="imgcontainer">
+                    <img src="./avatar.jpg" alt="Avatar" class="avatar">
+                    <h1 style="text-align:center">Sign up Form</h1>
+                    <span class="close" title="Close PopUp">&times;</span>
+
+                </div>
+            
+                <div class="container">
+                    <input type="text" placeholder="Enter Username" name="uname">
+                    <input type="password" placeholder="Enter Password" name="psw">
+                    <input type="text" placeholder="Enter Email" name="email">        
+                    <button type="submit" id='SignBtn'>Sign up</button>
+                </div>
+                
+            </form>
+        </div>
+        <header>
+            <div class="logo">
+              <a class="logo-link" href="./index.html">
+                <img src="./logo.png" alt="UEFA Champions League" title="UEFA Champions League">
+              </a>
+             
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <div class="dropdown">
+                    <a href="#" class="active">HOME</a>
+                    <div class="dropdown-content">
+                        <a href="#NEWS">NEWS</a>
+                        <a href="#Articles">BLOG</a>
+                    </div>
+                </div>
+                <a href="./articles.html" >ARTICLES</a>
+                <a href="./clubs.html">CLUBS</a>
+                <a href="./standings.html" >STANDINGS</a>
+                <a href="./uefaGame.html" id="newWindow">UEFA GAME</a>
+                <a href="./contact.html">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" id="hamburgerMenu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <button id="ScrollToTop" title="Go to Top">Top</button>
+        <div class="snowFlakes"></div>
+        <section id="banner">
+            
+            <ul class="list">
+                <h1 id="content">Content</h1>
+                <li>
+                    <a href="#NEWS">News</a>
+                </li >
+                <li>
+                    <a href="#smallVideo1">Best Saves Video</a>
+                </li>
+                <li>
+                    <a href="#mainVideo">Best Games Video</a>
+                </li>
+                <li><a href="./standings.html">Standings</a></li>
+                <li><a href="./clubs.html">Clubs</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+            </ul>
+        </section>
+        <section id="NEWS">
+            <h1>Latest NEWS</h1>
+            <div class="mainVideo" id="mainVideo">
+                <video controls>
+                    <source src="./video.mp4" type="video/mp4">
+                    <source src="./video.ogg" type="video/ogg">
+                    This video cannot be played.
+                </video>
+            </div>
+            <div class="thumbnails">
+                <div class="smallVideo" id="smallVideo1">
+                <video controls>
+                    <source src="./video1.mp4" type="video/mp4">
+                    <source src="./video1.ogg" type="video/ogg">
+                    This video cannot be played.
+                    
+                </video>
+                </div>
+                <div class="smallVideo" id="smallVideo2">
+                    <video  controls>
+                        <source src="./video2.mp4" type="video/mp4">
+                        <source src="./video2.ogg" type="video/ogg">
+                        This video cannot be played.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section id="Articles">
+            <h1 id="Article">Articles</h1>
+            <div class="blogpost">
+                 <div class="ArticleThumbnail">
+                    <a href="./articles.html#frank"> <img src="./articolLampard.jpg"></a>
+                </div>
+                <p><span>Champions League 100 club: Frank Lampard...</span></p>
+            </div> 
+            <div class="blogpost">
+                 <div class="ArticleThumbnail">
+                    <a href="./articles.html#matches"> <img src="./articolMeciuri.jpg"></a>
+                </div>
+                <p><span>Champions League matchday 4: what to get excited about!...</span></p>
+            </div> 
+            <div class="blogpost">
+                 <div class="ArticleThumbnail">
+                    <a href="./articles.html#solari"> <img src="./articolSolari.jpg"></a>
+                </div>
+                <p><span>Santiago Solari in charge at Real Madrid: who is he?...</span></p>
+            </div> 
+        </section>
+    </body>
+    <footer>
+        Copyright Morosan Ionut-Mihai
+    </footer>
+</html>

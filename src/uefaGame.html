@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UEFA Champions League - UEFA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Morosan Ionut-Mihai">
+        <meta name="description" content="This is a tiny project for Univeristy purposes. This is a site about UCL with a little game inside.">
+        <link rel="icon" href="ucl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="noStand">
+        <header>
+            <div class="logo">
+              <a class="logo-link" href="./index.html">
+                <img src="./logo.png" alt="UEFA Champions League" title="UEFA Champions League">
+              </a>
+             
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <div class="dropdown">
+                    <a href="./index.html">HOME</a>
+                    <div class="dropdown-content">
+                        <a href="./index.html#NEWS">NEWS</a>
+                        <a href="./index.html#Articles">BLOG</a>
+                    </div>
+                </div>
+                <a href="./articles.html" >ARTICLES</a>
+                <a href="./clubs.html">CLUBS</a>
+                <a href="./standings.html" >STANDINGS</a>
+                <a href="./uefaGame.html" class="active" id="newWindow">UEFA GAME</a>
+                <a href="./contact.html">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" id="hamburgerMenu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <div class="snowFlakes"></div>
+        
+        <button id="ScrollToTop" title="Go to Top">Top</button>
+        <h2 id="h22">Select your favorite team: 
+            <input list="favteams">
+
+                <datalist id="favteams" >
+                    <option value="Real Madrid" id="rmd">
+                    <option value="Barcelona" id="bar">
+                    <option value="Paris SG" id="psg">
+                    <option value="Manchester City" id="manc">
+                    <option value="Juventus" id="juve">
+                    <option value="Bayern" id="bayern">
+                </datalist>
+                <input type="submit" value="Submit" id="submit">
+                <input type="text" value="This is your team now!" disabled id="youTeam">
+        </h2>
+        <button id="openbtn">OPEN WINDOW</button>
+        <button id="closebtn">CLOSE WINDOW</button>   
+        <div id="playerName" >
+            <h1 id="h1Uefa">Choose a player</h1>
+        </div>
+        <div id="playerDiv"></div>
+        
+        <img src="./clubs/Barcelona/messi.jpg" id="drag" draggable="true" class="playerUefa" title="Messi">
+        <img src="./clubs/Juventus/cristiano.jpg" id="drag2" draggable="true" class="playerUefa" title="Cristiano">
+        <img src="./clubs/RealMadrid/bale.jpg" id="drag3" draggable="true" class="playerUefa" title="Bale">
+        <div id="uefadiv">
+            <button id="circleBtn">CHANGE COLOR</button>
+            <img src="./pitch.jpg" id="pitch">
+            <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+            <img src='./ball.png' id='ballImg'>
+            <img src='./gloves.png' id='gloves'>
+
+        </div>
+        
+        
+
+        
+    </body>
+    <footer>
+        Copyright Morosan Ionut-Mihai
+    </footer>
+</html>

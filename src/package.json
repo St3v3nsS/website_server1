@@ -1,0 +1,19 @@
+{
+  "name": "proiect1",
+  "version": "1.0.0",
+  "description": "Tiny web Project for Uni",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "author": "John",
+  "license": "ISC",
+  "dependencies": {
+    "dns": "^0.2.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.1.13",
+    "mongodb-core": "^3.1.11"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UEFA Champions League - UEFA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Morosan Ionut-Mihai">
+        <meta name="keywords" content="UCL,Uefa">
+        <meta name="description" content="This is a tiny project for Univeristy purposes. This is a site about UCL with a little game inside.">
+        <link rel="icon" href="ucl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="noStand">
+        <header>
+            <div class="logo">
+                <a class="logo-link" href="./index.html">
+                <img src="./logo.png" alt="UEFA Champions League" title="UEFA Champions League">
+                </a>
+                
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <div class="dropdown">
+                    <a href="#" class="active">HOME</a>
+                    <div class="dropdown-content">
+                        <a href="#NEWS">NEWS</a>
+                        <a href="#Articles">BLOG</a>
+                    </div>
+                </div>
+                <a href="./articles.html" >ARTICLES</a>
+                <a href="./clubs.html">CLUBS</a>
+                <a href="./standings.html" >STANDINGS</a>
+                <a href="./uefaGame.html" >UEFA GAME</a>
+                <a href="./contact.html">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" id="hamburgerMenu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <button id="ScrollToTop" title="Go to Top">Top</button>
+        <div class="snowFlakes"></div>
+
+        <div class="Signmodal" id="Signwrapper" style="display: block">
+            <form class="modal-content animate" method="post" action="/signup">
+    
+                <div class="imgcontainer">
+                    <img src="./avatar.jpg" alt="Avatar" class="avatar">
+                    <h1 style="text-align:center">Sign up Form</h1>
+                    <span class="close" title="Close PopUp">&times;</span>
+
+                </div>
+            
+                <div class="container">
+
+                    <input type="text" value="<%= qs.uname %>" name="uname">
+                    <input type="password" value="<%= qs.psw %>" name="psw">
+                    <input type="text" placeholder="Enter Email" name="email"> 
+                    <p style="color: red; padding: 12px 20px; margin: 8px 26px;">Invalid email!</p>       
+                    <button type="submit" id='SignBtn'>Sign up</button>
+                </div>
+                
+            </form>
+        </div>
+    </body>
+    <footer>
+        Copyright Morosan Ionut-Mihai
+    </footer>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UEFA Champions League - UEFA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Morosan Ionut-Mihai">
+        <meta name="keywords" content="UCL,Uefa">
+        <meta name="description" content="This is a tiny project for Univeristy purposes. This is a site about UCL with a little game inside.">
+        <link rel="icon" href="ucl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <div class="snowFlakes"></div>
+
+    <body class="noStand">
+        <header>
+            <div class="logo">
+              <a class="logo-link" href="./index.html">
+                <img src="./logo.png" alt="UEFA Champions League" title="UEFA Champions League">
+              </a>
+             
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <div class="dropdown">
+                    <a href="./index.html">HOME</a>
+                    <div class="dropdown-content">
+                        <a href="./index.html#NEWS">NEWS</a>
+                        <a href="./index.html#Articles">BLOG</a>
+                    </div>
+                </div>
+                <a href="./articles.html" >ARTICLES</a>
+                <a href="./clubs.html">CLUBS</a>
+                <a href="./standings.html" >STANDINGS</a>
+                <a href="./uefaGame.html" id="newWindow">UEFA GAME</a>
+                <a href="./contact.html" class="active">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" id="hamburgerMenu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <button id="ScrollToTop" title="Go to Top">Top</button>
+        
+        <form id="contact-form" method="post" action="/contact" role="form">
+            <fieldset>
+                <label for="message" class="labels">Please enter your message
+                <br></label><br>
+                <textarea name="message" placeholder="Your Message..." rows="20" cols="150"></textarea><br>
+                <label for="email" class="labels">Email</label><br>
+                <input type="text" name="email" placeholder="Your email"><br><br>
+                <input type="submit" value="SUBMIT" class="submit"><br>
+            </fieldset>
+            
+        </form>
+    </body>
+    <footer>
+        Copyright Morosan Ionut-Mihai
+    </footer>
+</html>
